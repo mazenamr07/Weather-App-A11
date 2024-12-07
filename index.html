@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    
+
     <!-- ---------------------------- Font Awesome ----------------------------- -->
     <link
       rel="stylesheet"
@@ -39,8 +39,58 @@
 
   <body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!-- ----------------------------------------------------------------------- -->
-    <!--                                 Header                                  -->
+    <!--                                 NavBar                                  -->
     <!-- ----------------------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg py-4">
+      <!-- Brand -->
+      <div class="container px-2">
+        <a class="navbar-brand d-flex flex-row align-items-center" href="#"
+          ><div class="img me-3">
+            <img class="w-100" src="images/favicon.ico" alt="website icon" />
+          </div>
+          <div class="name">
+            <h1 class="my-2">Cloud &amp; Clear</h1>
+            <span class="d-block"
+              >An easy way to get all the weather information you need
+            </span>
+          </div>
+        </a>
+
+        <!-- Small Screen Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Pages -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Camera</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- ---------------------------- Bootstrap JS ----------------------------- -->
     <script

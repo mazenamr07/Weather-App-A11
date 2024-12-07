@@ -7,5 +7,59 @@ a {
 
 /* -------------------------------- Variables ------------------------------- */
 :root {
-  --sample: none;
+  --bg-color: rgb(30, 32, 43);
+  --main-color: rgb(0, 170, 240);
+  --open-sans: "Open Sans", sans-serif;
+
+  /* Bootstrap */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   NavBar                                   */
+/* -------------------------------------------------------------------------- */
+nav {
+  background-color: var(--bg-color);
+  color: white;
+}
+
+/* ---------------------------------- Brand --------------------------------- */
+nav .navbar-brand .img {
+  width: 45px;
+}
+
+nav .navbar-brand .name h1 {
+  font-family: var(--open-sans);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+}
+nav .navbar-brand .name span {
+  font-family: var(--open-sans);
+  color: rgb(216, 216, 216);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+/* ---------------------------------- Pages --------------------------------- */
+.nav-link {
+  /* Bootstrap Variables */
+  --bs-navbar-nav-link-padding-x: 20px;
+
+  color: white;
+  font-size: 15px;
+  margin-left: 10px;
+  padding: 5px 20px 5px 20px;
+  border: 2px solid transparent;
+  border-radius: 50rem;
+
+  transition: color 150ms ease-out, border 250ms ease-in;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
 }
