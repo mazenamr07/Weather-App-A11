@@ -108,7 +108,9 @@
             id="location"
             placeholder="Find your location..."
           />
-          <button id="findBtn" class="btn rounded-pill px-5">Find</button>
+          <button id="findBtn" class="btn rounded-pill text-capitalize px-5">
+            Find
+          </button>
         </div>
 
         <!-- Weather Cards -->
@@ -123,15 +125,19 @@
                   <span>7 - December</span>
                 </h5>
 
-                <div class="card-body border-0">
-                  <h5 class="card-title text-capitalize">
-                    Robin Hood Airport Doncaster Sheffield
+                <div class="card-body border-0 px-4">
+                  <h5 class="card-title text-capitalize my-3">
+                    Robin Hood Airport Doncaster
                   </h5>
 
                   <div class="temperature text-uppercase">
                     <span class="degree d-block"> 8.1<sup>o</sup>C </span>
                     <div class="img">
-                      <img src="" alt="" class="my-5" />
+                      <img
+                        src="images/sun-img.webp"
+                        alt="weather icon"
+                        class=""
+                      />
                     </div>
 
                     <span class="clouds text-capitalize d-block my-3"
@@ -214,6 +220,36 @@
         </div>
       </div>
     </section>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Footer                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <!-- Search Bar -->
+            <div
+              id="newsLetter"
+              class="bg-main d-flex justify-content-between rounded-pill my-5 ps-3 pe-1 py-1"
+            >
+              <input
+                type="email"
+                name="newEmail"
+                id="newEmail"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button
+                id="newsBtn"
+                class="btn rounded-pill text-capitalize px-4"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- ---------------------------- Bootstrap JS ----------------------------- -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
