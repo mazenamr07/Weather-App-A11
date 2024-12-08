@@ -3,9 +3,10 @@
 /* -------------------------------------------------------------------------- */
 a {
   text-decoration: none;
+  color: inherit;
 }
 body {
-  background: violet;
+  background: var(--bg-color);
 }
 
 @media (min-width: 1400px) {
@@ -22,6 +23,7 @@ body {
 /* -------------------------------- Variables ------------------------------- */
 :root {
   --bg-color: rgb(30, 32, 43);
+  --bg-second: rgb(38, 41, 54);
   --main-color: rgb(0, 170, 240);
   --open-sans: "Open Sans", sans-serif;
   --transition: all 150ms ease-out;
@@ -30,6 +32,9 @@ body {
 /* Variable Classes */
 .bg-main {
   background-color: var(--bg-color) !important;
+}
+.bg-second {
+  background-color: var(--bg-second) !important;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -101,6 +106,30 @@ nav .navbar-brand .name span {
   margin-right: -20px;
 }
 
+/* Contact Page */
+#contact #searchAndWeather {
+  background-image: none;
+}
+
+#contact #searchAndWeather #locationHolder {
+  background-color: var(--bg-second);
+  color: white;
+}
+
+#contact #searchAndWeather #locationHolder .path {
+  font-family: var(--open-sans);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: rgb(191, 193, 200);
+}
+#contact #searchAndWeather #locationHolder .path > span {
+  color: white;
+}
+#contact #searchAndWeather #locationHolder .path > a:hover {
+  text-decoration: underline;
+}
+
 /* ------------------------------- Search Bar ------------------------------- */
 #searchAndWeather #location {
   background-color: transparent;
@@ -163,7 +192,7 @@ nav .navbar-brand .name span {
   height: 380px;
 }
 #searchAndWeather .card.small-card .card-body {
-  background: rgb(38, 41, 54);
+  background: var(--bg-second);
   font-family: var(--open-sans);
   border-radius: 0 0 0 0;
 }
@@ -209,6 +238,24 @@ nav .navbar-brand .name span {
 }
 #searchAndWeather .card .card-body .wind-item i {
   font-size: 18px;
+}
+
+/* Contact Page */
+#contact #searchAndWeather .img img {
+  height: 250px;
+}
+
+#contact #searchAndWeather .contact-item {
+  font-family: var(--open-sans);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  color: rgb(191, 193, 200);
+}
+
+#contact #searchAndWeather .contact-item i {
+  color: var(--main-color);
+  font-size: 16px;
 }
 
 /* -------------------------------------------------------------------------- */
