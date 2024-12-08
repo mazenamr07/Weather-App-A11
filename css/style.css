@@ -20,6 +20,22 @@ body {
   }
 }
 
+/* Button */
+.btn {
+  color: white;
+  font-family: var(--open-sans);
+  font-size: 14px;
+  background-color: var(--main-color);
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  transition: var(--transition);
+}
+.btn:hover {
+  background-color: rgb(0, 142, 202);
+}
+
 /* -------------------------------- Variables ------------------------------- */
 :root {
   --bg-color: rgb(30, 32, 43);
@@ -71,6 +87,7 @@ nav .navbar-brand .name span {
   --bs-navbar-nav-link-padding-x: 20px;
 
   color: white;
+  font-family: var(--open-sans);
   font-size: 15px;
   margin-left: 10px;
   padding: 5px 20px 5px 20px;
@@ -140,22 +157,6 @@ nav .navbar-brand .name span {
 }
 #searchAndWeather #location::placeholder {
   color: rgba(216, 216, 216, 0.63);
-}
-
-/* Button */
-#searchAndWeather #findBtn {
-  color: white;
-  font-family: var(--open-sans);
-  font-size: 14px;
-  background-color: var(--main-color);
-  border: none;
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  transition: var(--transition);
-}
-#searchAndWeather #findBtn:hover {
-  background-color: rgb(0, 142, 202);
 }
 
 /* ---------------------------------- Card ---------------------------------- */
@@ -258,6 +259,47 @@ nav .navbar-brand .name span {
   font-size: 16px;
 }
 
+#contact #searchAndWeather .details {
+  font-family: var(--open-sans);
+}
+#contact #searchAndWeather .details > h4 {
+  font-size: 36px;
+  font-weight: 300;
+  color: white;
+}
+#contact #searchAndWeather .details > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgb(191, 193, 200);
+}
+
+#contact #searchAndWeather .input-fields .form-control {
+  background-color: transparent;
+  color: white;
+  border-radius: 50rem;
+  border: 2px solid rgb(60, 64, 68);
+  padding: 13px;
+
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--open-sans);
+}
+#contact #searchAndWeather .input-fields .form-control::placeholder {
+  color: rgb(97, 104, 110);
+}
+
+#contact #searchAndWeather .input-fields textarea.form-control {
+  border-radius: 25px;
+  height: 150px;
+}
+
+#contact #searchAndWeather .input-fields button {
+  width: 80px;
+  margin-left: auto;
+  margin-right: 12px;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   Footer                                   */
 /* -------------------------------------------------------------------------- */
@@ -280,22 +322,6 @@ footer #newEmail {
 }
 footer #newEmail::placeholder {
   color: rgba(216, 216, 216, 0.63);
-}
-
-/* Button */
-footer #newsBtn {
-  color: white;
-  font-family: var(--open-sans);
-  font-size: 14px;
-  background-color: var(--main-color);
-  border: none;
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  transition: var(--transition);
-}
-footer #newsBtn:hover {
-  background-color: rgb(0, 142, 202);
 }
 
 /* ---------------------------------- Icons --------------------------------- */

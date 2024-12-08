@@ -99,10 +99,10 @@
     <!-- ----------------------------------------------------------------------- -->
     <section id="searchAndWeather" class="overflow-auto py-4 pb-5">
       <div class="container">
-        <!-- Search Bar -->
+        <!-- Page Bar -->
         <div
           id="locationHolder"
-          class="d-flex justify-content-between rounded-pill my-5 px-4 py-3"
+          class="d-flex justify-content-between rounded-pill mb-5 px-4 py-3"
         >
           <div class="path d-flex align-items-center gap-2 py-1">
             <a href="#">
@@ -113,15 +113,13 @@
           </div>
         </div>
 
-        <div class="container">
+        <!-- Card & Form -->
+        <div class="container py-4">
           <div class="row">
             <div class="col-lg-5">
               <div class="bg-second overflow-hidden border-0 rounded-3">
                 <div class="img mb-5">
-                  <img
-                    src="images/contact.jpg"
-                    alt="image of clouds"
-                  />
+                  <img src="images/contact.jpg" alt="image of clouds" />
                 </div>
 
                 <div class="image-text px-2 pb-2">
@@ -150,6 +148,68 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 offset-1">
+              <div class="container overflow-hidden border-0 text-white">
+                <div class="details">
+                  <h4 class="text-capitalize">Contact us</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Commodi consectetur inventore ducimus, facilis, numquam id
+                    soluta omnis eius recusandae nesciunt vero repellat harum
+                    cum. Nisi facilis odit hic, ipsum sed!
+                  </p>
+                </div>
+
+                <div class="input-fields">
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputEmail4"
+                        placeholder="Your Name..."
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputPassword4"
+                        placeholder="Email Address..."
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputEmail4"
+                        placeholder="Company Name..."
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputPassword4"
+                        placeholder="Website..."
+                      />
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        class="form-control"
+                        placeholder="Your Message..."
+                      ></textarea>
+                    </div>
+                    <button
+                      id="formBtn"
+                      class="btn rounded-pill text-capitalize py-2"
+                    >
+                      Submit
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
