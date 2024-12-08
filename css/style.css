@@ -250,3 +250,32 @@ footer #newsBtn {
 footer #newsBtn:hover {
   background-color: rgb(0, 142, 202);
 }
+
+/* ---------------------------------- Icons --------------------------------- */
+footer a.icon {
+  width: 40px;
+  height: 40px;
+
+  background-color: rgb(30, 32, 43);
+  color: var(--main-color);
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: var(--transition);
+}
+footer a.icon:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
+footer span.copyright {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  color: rgb(191, 193, 200);
+
+  top: -30px;
+}
