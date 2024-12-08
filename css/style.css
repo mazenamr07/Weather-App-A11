@@ -94,6 +94,10 @@ nav {
   font-size: 20px;
 }
 
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 /* ---------------------------------- Brand --------------------------------- */
 nav .navbar-brand .img {
   width: 45px;
