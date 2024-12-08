@@ -32,8 +32,19 @@ body {
 
   transition: var(--transition);
 }
-.btn:hover {
+.btn:hover,
+.btn:focus-visible {
   background-color: rgb(0, 142, 202);
+  color: white;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: white;
+  background-color: var(--main-color);
 }
 
 /* -------------------------------- Variables ------------------------------- */
@@ -288,6 +299,10 @@ nav .navbar-brand .name span {
 #contact #searchAndWeather .input-fields .form-control::placeholder {
   color: rgb(97, 104, 110);
 }
+#contact #searchAndWeather .input-fields .form-control:focus {
+  border-color: var(--main-color);
+  box-shadow: none;
+}
 
 #contact #searchAndWeather .input-fields textarea.form-control {
   border-radius: 25px;
@@ -342,6 +357,10 @@ footer a.icon {
 footer a.icon:hover {
   color: white;
   background-color: var(--main-color);
+}
+footer a.icon:active {
+  background-color: rgb(30, 32, 43);
+  color: var(--main-color);
 }
 
 footer span.copyright {
