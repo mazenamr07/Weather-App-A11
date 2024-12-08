@@ -4,14 +4,21 @@
 a {
   text-decoration: none;
 }
+body {
+  background: violet;
+}
 
 /* -------------------------------- Variables ------------------------------- */
 :root {
   --bg-color: rgb(30, 32, 43);
   --main-color: rgb(0, 170, 240);
   --open-sans: "Open Sans", sans-serif;
+  --transition: all 150ms ease-out;
+}
 
-  /* Bootstrap */
+/* Variable Classes */
+.bg-main {
+  background-color: var(--bg-color) !important;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -62,4 +69,131 @@ nav .navbar-brand .name span {
 .nav-link:hover {
   color: var(--main-color);
   border-color: var(--main-color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Search & Weather                              */
+/* -------------------------------------------------------------------------- */
+#searchAndWeather {
+  background-color: var(--bg-color);
+  background-image: url(../images/banner.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+#searchAndWeather #locationHolder {
+  cursor: text;
+}
+
+#searchAndWeather .row-minus {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+/* ------------------------------- Search Bar ------------------------------- */
+#searchAndWeather #location {
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  caret-color: white;
+}
+#searchAndWeather #location::placeholder {
+  color: rgba(216, 216, 216, 0.63);
+}
+
+/* Button */
+#searchAndWeather #findBtn {
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  transition: var(--transition);
+}
+#searchAndWeather #findBtn:hover {
+  background-color: rgb(0, 142, 202);
+}
+
+/* ---------------------------------- Card ---------------------------------- */
+#searchAndWeather .card .card-header {
+  background-color: rgb(45, 48, 61);
+  color: rgb(191, 193, 200);
+  font-family: var(--open-sans);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#searchAndWeather .card .card-header:first-child {
+  border-radius: 10px 0 0 0;
+}
+#searchAndWeather .card.small-card .card-header:first-child {
+  background-color: rgb(34, 37, 48);
+  border-radius: 0 0 0 0;
+}
+#searchAndWeather
+  .col-lg-4:nth-child(3)
+  .card.small-card
+  .card-header:first-child {
+  background-color: rgb(45, 48, 61);
+  border-radius: 0 10px 0 0;
+}
+
+#searchAndWeather .card .card-body {
+  background-color: rgb(50, 53, 68);
+  font-family: var(--open-sans);
+  color: rgb(191, 193, 200);
+  border-radius: 0 0 0 10px;
+  height: 380px;
+}
+#searchAndWeather .card.small-card .card-body {
+  background: rgb(38, 41, 54);
+  font-family: var(--open-sans);
+  border-radius: 0 0 0 0;
+}
+#searchAndWeather .col-lg-4:nth-child(3) .card .card-body {
+  background-color: rgb(50, 53, 68);
+  border-radius: 0 0 10px 0;
+}
+
+#searchAndWeather .card .card-body .card-title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+#searchAndWeather .card .card-body .temperature .degree {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 135px;
+  color: white;
+}
+#searchAndWeather .card.small-card .card-body .temperature .degree {
+  font-size: 24px;
+  line-height: 36px;
+}
+#searchAndWeather .card.small-card .card-body .temperature .degree-small {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgb(191, 193, 200);
+}
+
+#searchAndWeather .card .card-body .temperature .clouds {
+  color: var(--main-color);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+#searchAndWeather .card .card-body .wind-item {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+}
+#searchAndWeather .card .card-body .wind-item i {
+  font-size: 18px;
 }
