@@ -59,7 +59,7 @@ newsHolder.addEventListener("click", function () {
 });
 
 // Weather data splitting
-getCity("cairo");
+getLocation();
 search.addEventListener("keyup", function () {
   var cityInitials = search.value;
   getCity(cityInitials);
@@ -182,4 +182,12 @@ async function getCity(initials) {
       fetching(city);
     }
   }
+}
+
+async function getLocation() {
+  var link = "http://ip-api.com/json/?fields=city";
+  var response = await fetch(link);
+  var data = await response.json();
+
+  fetching(data.city);
 }
