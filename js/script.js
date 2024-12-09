@@ -172,7 +172,7 @@ function displayDays(dayData) {
 
 async function getCity(initials) {
   if (!(initials.length < 1)) {
-    var link = `http://api.weatherapi.com/v1/search.json?key=${API_Key}&q=${initials}`;
+    var link = `https://api.weatherapi.com/v1/search.json?key=${API_Key}&q=${initials}`;
     var response = await fetch(link);
     var result = await response.json();
     if (result.length > 0) {
@@ -185,7 +185,8 @@ async function getCity(initials) {
 }
 
 async function getLocation() {
-  var link = "http://ip-api.com/json/?fields=city";
+  const link =
+    "https://api.ipapi.com/api/check?access_key=1aae8f64a3c733b96ea30c29b52e1426";
   var response = await fetch(link);
   var data = await response.json();
 
