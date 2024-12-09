@@ -121,55 +121,49 @@
         <div class="container">
           <div class="row row-minus g-0">
             <div class="col-lg-4">
-              <div class="card border-0 rounded-5">
+              <div id="firstCard" class="card border-0 rounded-5">
                 <h5
                   class="card-header d-flex justify-content-between text-capitalize"
                 >
-                  <span>Saturday</span>
-                  <span>7 - December</span>
+                  <span class="weekDay"></span>
+                  <span class="monthDay"></span>
                 </h5>
 
                 <div class="card-body border-0 px-4">
-                  <h5 class="card-title text-capitalize my-3">
-                    Robin Hood Airport Doncaster
-                  </h5>
+                  <h5 class="card-title text-capitalize my-3"></h5>
 
                   <div class="temperature text-uppercase">
-                    <span class="degree d-block"> 8.1<sup>o</sup>C </span>
+                    <span class="degree d-block">
+                      <span id="degree"></span><sup>o</sup>C
+                    </span>
                     <div class="img">
-                      <img
-                        src="images/sun-img.webp"
-                        alt="weather icon"
-                        class=""
-                      />
+                      <img class="w-100" alt="weather icon" />
                     </div>
 
-                    <span class="clouds text-capitalize d-block my-3"
-                      >Partly cloudy</span
-                    >
+                    <span class="clouds text-capitalize d-block my-3"></span>
                   </div>
 
-                  <div class="wind d-flex justify-content-between w-75 mb-2">
+                  <div class="wind d-flex gap-4 w-100 mb-2">
                     <div class="wind-item d-flex align-items-center">
                       <i class="fa-solid fa-umbrella me-1"></i>
-                      <span>20%</span>
+                      <span></span>
                     </div>
                     <div class="wind-item d-flex align-items-center">
                       <i class="fa-solid fa-wind me-1"></i>
-                      <span class="text-lowercase">18km/h</span>
+                      <span class="text-lowercase"></span>
                     </div>
                     <div class="wind-item d-flex align-items-center">
                       <i class="fa-solid fa-compass me-1"></i>
-                      <span class="text-capitalize">East</span>
+                      <span class="text-capitalize"></span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="card small-card border-0 rounded-5">
+              <div class="card otherCard small-card border-0 rounded-5">
                 <h5 class="card-header d-flex text-capitalize">
-                  <span class="mx-auto">Monday</span>
+                  <span class="mx-auto weekDay"></span>
                 </h5>
 
                 <div class="card-body border-0">
@@ -177,26 +171,24 @@
                     class="temperature text-uppercase d-flex flex-column align-items-center"
                   >
                     <div class="img">
-                      <img
-                        src="images/sun-img.webp"
-                        alt="weather icon"
-                        class="mt-5 mb-2"
-                      />
+                      <img alt="weather icon" class="mt-5 mb-2" />
                     </div>
-                    <span class="degree d-block">22.9<sup>o</sup>C</span>
-                    <span class="degree-small d-block">13.9<sup>o</sup></span>
-
-                    <span class="clouds text-capitalize d-block my-3"
-                      >Partly cloudy</span
+                    <span class="degree d-block"
+                      ><span></span><sup>o</sup>C</span
                     >
+                    <span class="degree-small d-block"
+                      ><span></span><sup>o</sup></span
+                    >
+
+                    <span class="clouds text-capitalize d-block my-3"></span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="card small-card border-0 rounded-5">
+              <div class="card otherCard small-card border-0 rounded-5">
                 <h5 class="card-header d-flex text-capitalize">
-                  <span class="mx-auto">Tuesday</span>
+                  <span class="mx-auto weekDay"></span>
                 </h5>
 
                 <div class="card-body border-0">
@@ -204,18 +196,16 @@
                     class="temperature text-uppercase d-flex flex-column align-items-center"
                   >
                     <div class="img">
-                      <img
-                        src="images/sun-img.webp"
-                        alt="weather icon"
-                        class="mt-5 mb-2"
-                      />
+                      <img alt="weather icon" class="mt-5 mb-2" />
                     </div>
-                    <span class="degree d-block">22.9<sup>o</sup>C</span>
-                    <span class="degree-small d-block">13.9<sup>o</sup></span>
-
-                    <span class="clouds text-capitalize d-block my-3"
-                      >Overcast</span
+                    <span class="degree d-block"
+                      ><span></span><sup>o</sup>C</span
                     >
+                    <span class="degree-small d-block"
+                      ><span></span><sup>o</sup></span
+                    >
+
+                    <span class="clouds text-capitalize d-block my-3"></span>
                   </div>
                 </div>
               </div>
@@ -231,8 +221,8 @@
     <footer class="pb-5">
       <div class="container">
         <div class="row align-items-center">
+          <!-- Search Bar -->
           <div class="col-lg-8">
-            <!-- Search Bar -->
             <div
               id="newsLetter"
               class="bg-main d-flex justify-content-between rounded-pill my-5 ps-3 pe-1 py-1"
